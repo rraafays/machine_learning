@@ -1,0 +1,2 @@
+- [ ] learn how to clean the dataset from week 3
+- [ ] clean the assignment data
