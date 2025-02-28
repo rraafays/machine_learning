@@ -5,6 +5,10 @@ pkgs.mkShell {
   packages = [
     pkgs.python312
     pkgs.python312Packages.pip
+    (pkgs.writeShellScriptBin "notebook" ''
+      #!${pkgs.stdenv.shell}
+      jupyter-notebook "$@"
+    '')
   ];
   shellHook = ''
     python -m venv .venv
