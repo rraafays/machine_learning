@@ -14,9 +14,10 @@ pkgs.mkShell {
     python -m venv .venv
     source .venv/bin/activate
 
-    pip install jupyter \
-    			numpy \
-    			pandas \
-    			matplotlib
+    pip install jupyter
+    pip install numpy
+    pip install pandas
+    pip install matplotlib
+    pip install seaborn
   '';
 }
